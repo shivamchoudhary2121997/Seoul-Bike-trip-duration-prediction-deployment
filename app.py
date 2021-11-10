@@ -64,7 +64,7 @@ def main():
                 # ['Distance','Haversine','Phour','Pmin','Dmin','Wind','Humid','Solar','GroundTemp','Dust']
                 x_test = np.array([[distance, haversine, pickuphour, pickupmin, dropmin,wind,humid,solar,groundtemp,dust]])
                 prediction = model.predict(x_test)
-                st.info(f"Your Duration is {np.round(prediction[0],2)} seconds")
+                st.info(f"Your Duration is {np.round(prediction[0],2)} minutes")
         else:
             st.error('Please Enter All the Details')
 
